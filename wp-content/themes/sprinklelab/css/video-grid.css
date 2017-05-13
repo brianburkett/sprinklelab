@@ -1,0 +1,138 @@
+.video-grid {
+  margin-bottom: -1px;
+  position: relative;
+  max-width: 100%; }
+  .video-grid ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-width: 100%;
+    overflow: hidden;
+    height: 100%; }
+    .video-grid ul li {
+      height: 0;
+      width: 50%;
+      padding-top: 26%;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      -webkit-transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+      -moz-transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+      -o-transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+      .video-grid ul li:hover .image-overlay {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%); }
+      .video-grid ul li:hover a:before {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%); }
+      .video-grid ul li.supersize {
+        padding-top: 52%; }
+      .video-grid ul li .image-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: cover;
+        background-position: center;
+        -webkit-transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+        -moz-transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+        -o-transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+        transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+      .video-grid ul li a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        color: #FFF; }
+        .video-grid ul li a:before {
+          display: block;
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: black;
+          opacity: 0;
+          z-index: 1;
+          -webkit-transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+          -moz-transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+          -o-transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+          transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+        .video-grid ul li a:hover:before {
+          opacity: .5;
+          -webkit-filter: grayscale(0%);
+          filter: grayscale(0%); }
+        .video-grid ul li a.hp:before {
+          background-color: #e3489a; }
+        .video-grid ul li a.hb:before {
+          background-color: #1aaed8; }
+        .video-grid ul li a.hg:before {
+          background-color: #6bc04b; }
+        .video-grid ul li a > span {
+          display: block;
+          vertical-align: middle;
+          position: relative;
+          width: 100%;
+          top: 50%;
+          transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          z-index: 2;
+          text-shadow: 0px 0px 28px rgba(0, 0, 0, 0.15); }
+        .video-grid ul li a .play-button {
+          width: 55px;
+          height: 55px;
+          border-width: 3px;
+          font-size: 28px; }
+          .video-grid ul li a .play-button:before {
+            top: 5px;
+            left: 2px;
+            position: relative; }
+        .video-grid ul li a strong {
+          color: #FFF;
+          display: block;
+          margin-top: 15px;
+          font-family: 'titilliumtext15l999_wt';
+          text-transform: uppercase;
+          font-size: 45px;
+          letter-spacing: 6px; }
+  @media (max-width: 1200px) {
+    .video-grid ul li a > span strong {
+      font-size: 30px;
+      letter-spacing: 3px; } }
+  @media (max-width: 768px) {
+    .video-grid ul li {
+      width: 100%;
+      padding-top: 50%; } }
+
+.video-grid,
+.video-grid ul,
+.video-grid ul li {
+  -webkit-transition-duration: 0s !important;
+  -moz-transition-duration: 0s !important;
+  -ms-transition-duration: 0s !important;
+  -o-transition-duration: 0s !important;
+  transition-duration: 0s !important; }
+
+@media (max-width: 768px) {
+  body.single-video p.medium.summary {
+    padding-top: 0px;
+    margin-top: 0px; }
+  body.single-video .project-gallery {
+    padding: 30px 2%;
+    font-size: 0; }
+    body.single-video .project-gallery .image.plus {
+      width: 45%;
+      margin: 0 2%;
+      display: inline-block; }
+      body.single-video .project-gallery .image.plus img {
+        display: block; } }

@@ -1,0 +1,66 @@
+/*
+Syntax error: File to import not found or unreadable: partials/programs-slider.
+              Load paths:
+                /Users/jgoldsmith/Sites/sprinklelab/wp-content/themes/sprinklelab/sass
+                /Users/jgoldsmith/.rvm/gems/ruby-2.1.1@global/gems/compass-core-1.0.0.alpha.19/stylesheets
+                Compass::SpriteImporter
+        on line 3 of /Users/jgoldsmith/Sites/sprinklelab/wp-content/themes/sprinklelab/sass/holiday-campaign.scss
+
+1: /Users/jgoldsmith/Sites/sprinklelab/wp-content/themes/sprinklelab/sass/holiday-campaign.scss
+
+Backtrace:
+/Users/jgoldsmith/Sites/sprinklelab/wp-content/themes/sprinklelab/sass/holiday-campaign.scss:3
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/tree/import_node.rb:66:in `rescue in import'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/tree/import_node.rb:45:in `import'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:283:in `visit_import'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/stack.rb:79:in `block in with_base'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/stack.rb:121:in `with_frame'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/stack.rb:79:in `with_base'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:151:in `visit'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/engine.rb:371:in `_render_with_sourcemap'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/sass-3.3.7/lib/sass/engine.rb:291:in `render_with_sourcemap'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:169:in `block (2 levels) in compile'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:153:in `timed'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:166:in `block in compile'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/logger.rb:46:in `red'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:165:in `compile'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:144:in `compile_if_required'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:129:in `block (2 levels) in run'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:127:in `each'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:127:in `block in run'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:153:in `timed'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:126:in `run'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/commands/update_project.rb:49:in `perform'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/commands/base.rb:18:in `execute'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/bin/compass:30:in `block in <top (required)>'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/bin/compass:44:in `call'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/bin/compass:44:in `<top (required)>'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/bin/compass:23:in `load'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/bin/compass:23:in `<main>'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
+/Users/jgoldsmith/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: partials/programs-slider.\A               Load paths:\A                 /Users/jgoldsmith/Sites/sprinklelab/wp-content/themes/sprinklelab/sass\A                 /Users/jgoldsmith/.rvm/gems/ruby-2.1.1@global/gems/compass-core-1.0.0.alpha.19/stylesheets\A                 Compass::SpriteImporter\A         on line 3 of /Users/jgoldsmith/Sites/sprinklelab/wp-content/themes/sprinklelab/sass/holiday-campaign.scss\A \A 1: /Users/jgoldsmith/Sites/sprinklelab/wp-content/themes/sprinklelab/sass/holiday-campaign.scss"; }

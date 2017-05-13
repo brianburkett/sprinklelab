@@ -1,0 +1,33 @@
+#sprinkle-options h2 {
+	
+	margin-bottom: 20px;
+	
+}
+
+
+.option-wrap {
+	padding: 0px !important;
+}
+
+.option-wrap h3 {
+	cursor: default !important;
+}
+
+#sprinkle-options input[type="text"],
+#sprinkle-options textarea {
+	width: 500px;
+}
+
+#sprinkle-options textarea {
+	height: 300px;
+}
+
+.description-meta-wrap textarea {
+	display: block;
+	width: 100%;
+}
+
+.description-meta-wrap label {
+	margin-bottom: 20px;
+	display: block;
+}
