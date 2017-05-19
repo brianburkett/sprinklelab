@@ -1,7 +1,11 @@
 body {
 	.fancybox-wrap {
-		max-width: 1100px !important;
+		// max-width: 1100px !important;
 		margin: 0 auto;
+		.fancybox-inner,
+		iframe {
+			max-width: 100%;
+		}
 		.fancybox-skin {
 			background: transparent !important;
 			.fancybox-close {
@@ -162,6 +166,29 @@ body.single-video {
 		.project-description iframe,
 		#main-content iframe {
 			height: auto;
+		}
+	}
+}
+
+body.single-director {
+	.director-bio {
+		color: #FFFFFF;
+		p {
+			color: inherit;
+			&:first-child {
+				margin-top: 50px;
+			}
+			&:last-child {
+				margin-bottom: 0px;
+			}
+		}
+		span {
+			color: inherit;
+		}
+		@media ( max-width: 792px ) {
+			p {
+				font-size: 16px;
+			}
 		}
 	}
 }

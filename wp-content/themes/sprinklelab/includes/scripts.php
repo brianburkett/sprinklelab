@@ -26,7 +26,7 @@ function theme_register_scripts()
     wp_register_script('jquery.videobackground', get_stylesheet_directory_uri() . '/bower_components/jquery-videobackground/script/jquery.videobackground.js', array('jquery'), null, true);
 
 	wp_register_script('video-grid', get_stylesheet_directory_uri() . '/js/video-grid.js', array('jquery'), '2.1', true);
-	
+
     // Global
     wp_register_script('ic-global', get_stylesheet_directory_uri() . '/js/global.js', array('modernizr', 'jquery', 'bootstrap', 'fancybox', 'fancybox-media', 'spin-js', 'parsley', 'jwplayer', 'isotope', 'video-grid'), '1.0', false);
 }

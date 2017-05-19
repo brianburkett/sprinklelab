@@ -1,16 +1,16 @@
 <?php
 add_action( 'admin_menu', function(){
-	
+
 	add_menu_page(
 		'Theme Options',
 		'Theme Options',
 		'edit_posts',
 		'theme-options',
 		'sprinkle_theme_options',
-		null, // icon url
+    'dashicons-admin-settings',
 		3
 	);
-		
+
 } );
 
 function sprinkle_theme_options(){
@@ -20,12 +20,12 @@ function sprinkle_theme_options(){
 
 	$sprinkle_theme_options = get_option('sprinkle_theme_options');
 	$sprinkle_theme_options = is_array($sprinkle_theme_options) ? $sprinkle_theme_options : array();
-	
+
 	?>
 	<form method="post" action="">
 		<div class="wrap" id="sprinkle-options">
 			<h2>Sprinkle Lab Theme Options</h2>
-			
+
 			<div class="option-wrap metabox-holder postbox">
 				<h3 class="hndle"><span>General Information</span></h3>
 				<div class="inside">
@@ -45,7 +45,7 @@ function sprinkle_theme_options(){
 					</table>
 				</div><?php // .inside ?>
 			</div>
-			
+
 			<div class="option-wrap metabox-holder postbox">
 				<h3 class="hndle"><span>Social</span></h3>
 				<div class="inside">
@@ -65,7 +65,7 @@ function sprinkle_theme_options(){
 					</table>
 				</div><?php // .inside ?>
 			</div>
-			
+
 			<div class="option-wrap metabox-holder postbox">
 				<h3 class="hndle"><span>Homepage Options</span></h3>
 				<div class="inside">
@@ -113,7 +113,7 @@ function sprinkle_theme_options(){
 					</table>
 				</div>
 			</div>
-			
+
 			<div class="option-wrap metabox-holder postbox">
 				<h3 class="hndle"><span>Contact Page Options</span></h3>
 				<div class="inside">
@@ -129,7 +129,7 @@ function sprinkle_theme_options(){
 					</table>
 				</div><?php // .inside ?>
 			</div>
-			
+
 			<div class="option-wrap metabox-holder postbox">
 				<h3 class="hndle"><span>Our Work Options</span></h3>
 				<div class="inside">
@@ -143,7 +143,19 @@ function sprinkle_theme_options(){
 			</div>
 
 			<div class="option-wrap metabox-holder postbox">
-				<h3 class="hndle"><span>Career page Options</span></h3>
+				<h3 class="hndle"><span>Director Page Options</span></h3>
+				<div class="inside">
+					<table>
+						<tr>
+							<td valign="top"><label for="our_work_headline">Directors Headline</label></td>
+							<td><input type="text" name="sprinkle_theme_options[directors_headline]" id="directors_headline" value="<?php echo_test('directors_headline', $sprinkle_theme_options); ?>" /></td>
+						</tr>
+					</table>
+				</div><?php // .inside ?>
+			</div>
+
+			<div class="option-wrap metabox-holder postbox">
+				<h3 class="hndle"><span>Career Page Options</span></h3>
 				<div class="inside">
 					<table>
 						<tr>
@@ -177,7 +189,7 @@ function sprinkle_theme_options(){
 					</table>
 				</div><?php // .inside ?>
 			</div>
-			
+
 		</div>
 		<?php submit_button('Save Options'); ?>
 	</form>

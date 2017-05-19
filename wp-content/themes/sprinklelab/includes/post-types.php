@@ -21,7 +21,8 @@ $post_types = array(
         'show_in_menu' => true,
         'query_var' => true,
         'rewrite' => true,
-        'capability_type' => 'post'
+        'capability_type' => 'post',
+        'menu_icon' => 'dashicons-video-alt'
     ),
     'director' => array(
         'label'  => 'Directors',
@@ -40,10 +41,12 @@ $post_types = array(
         'supports'      => array('title', 'editor', 'thumbnail'),
         'publicly_queryable' => true,
         'show_ui' => true,
-        'show_in_menu' => 'edit.php?post_type=video',
+        'show_in_menu' => true,
         'query_var' => true,
-        'rewrite' => true,
-        'capability_type' => 'post'
+        'rewrite' => array('slug' => '/directors'),
+        'capability_type' => 'post',
+        'menu_icon' => 'dashicons-megaphone',
+        'has_archive' => false,
     ),
     'press' => array(
         'labels' => array(
@@ -66,7 +69,8 @@ $post_types = array(
         'query_var' => true,
         'rewrite' => true,
         'capability_type' => 'post',
-        'supports' => array('title','editor','page-attributes','thumbnail')
+        'supports' => array('title','editor','page-attributes','thumbnail'),
+        'menu_icon' => 'dashicons-nametag'
     ),
     'jobs' => array(
         'labels' => array(
@@ -90,7 +94,8 @@ $post_types = array(
         'rewrite' => true,
         'capability_type' => 'post',
         'has_archive' => false,
-        'supports' => array('title','editor','page-attributes','thumbnail')
+        'supports' => array('title','editor','page-attributes','thumbnail'),
+        'menu_icon' => 'dashicons-id-alt'
     )
 );
 
@@ -106,7 +111,7 @@ function ic_custom_post_types(){
 };
 
 $taxonomies = array(
- 
+
     'video_type'    => array(
         'object_type'   => 'video',
         'label'         => 'Video Type',
@@ -139,11 +144,11 @@ $taxonomies = array(
 // add custom post taxonomies
 function ic_custom_taxonomy(){
     global $taxonomies;
-    
+
     foreach( $taxonomies as $taxonomy => $params ) {
-        register_taxonomy($taxonomy, $params['object_type'], $params);  
+        register_taxonomy($taxonomy, $params['object_type'], $params);
     }
 };
-add_action('init', 'ic_custom_taxonomy');  
+add_action('init', 'ic_custom_taxonomy');
 
 ?>

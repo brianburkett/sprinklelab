@@ -2,8 +2,8 @@
 **Contributors:** bradt, deliciousbrains  
 **Tags:** uploads, amazon, s3, amazon s3, mirror, admin, media, cdn, cloudfront  
 **Requires at least:** 4.4  
-**Tested up to:** 4.6.1  
-**Stable tag:** 1.1.2  
+**Tested up to:** 4.7.3  
+**Stable tag:** 1.1.6  
 **License:** GPLv3  
 
 Copies files to Amazon S3 as they are uploaded to the Media Library. Optionally configure Amazon CloudFront for faster delivery.
@@ -68,6 +68,32 @@ This is a major change, which ensures S3 URLs are no longer saved in post conten
 This version requires PHP 5.3.3+ and the Amazon Web Services plugin
 
 ## Changelog ##
+
+### WP Offload S3 Lite 1.1.6 - 2017-03-13 ###
+* New: Compatibility with [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/)
+* New: `as3cf_filter_post_local_to_s3` and `as3cf_filter_post_s3_to_local` filters added for filtering S3 URLs in custom content
+* Improvement: Ensure files uploaded using `media_handle_sideload` have unique filename on S3 when 'Remove Files From Server' enabled
+* Bug fix: Files uploaded to S3 with empty filenames when the filename started with non-latin characters
+* Bug fix: Audio files with private ACL not working with WordPress's default media player
+* Bug fix: S3 API version not passed to S3 client
+* Bug fix: Content added to text widgets via the Customizer not saved
+* Bug fix: Original file not removed locally when cropped via the Customizer and 'Remove Files From Server' enabled
+* Bug fix: Incorrect Media Library URLs saved to the database when WordPress installed in a subdirectory
+
+### WP Offload S3 Lite 1.1.5 - 2017-01-12 ###
+* Improvement: Filter custom CSS - S3 URLs will no longer be saved to the database
+* Bug fix: PDF previews have incorrect MIME type
+* Bug fix: Original PDF not removed from S3 on attachment delete when image previews exist
+
+### WP Offload S3 Lite 1.1.4 - 2016-12-13 ###
+* New: Upgrade routine to replace all S3 URLs in post excerpts with local URLs
+* Improvement: Performance improvements
+* Improvement: Allow expires time to be filtered for private content using the `as3cf_expires` filter
+* Bug fix: Image `srcset` not correctly applied when file names contain special characters
+
+### WP Offload S3 Lite 1.1.3 - 2016-11-28 ###
+* Bug fix: Private URL signing params stripped in some circumstances
+* Improvement: Performance improvements for URL filtering, especially on large sites
 
 ### WP Offload S3 Lite 1.1.2 - 2016-11-02 ###
 * Improvement: Better content filtering support for third party plugins and themes
